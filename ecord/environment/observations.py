@@ -1,0 +1,44 @@
+from enum import Enum
+
+
+class NodeObservation(Enum):
+    STATE = 0
+
+    PEEK = 1
+    PEEK_NORM = 2
+    PEEK_SCALE = 3
+
+    DEGREE_NORM = 4
+
+    STEPS_STATIC = 5
+    STEPS_STATIC_NORM = 6
+    STEPS_STATIC_CLIP = 7
+
+    STATE_BEST = 8
+
+    LAPLACIAN_PE = 9
+
+    ID = 10
+
+class GlobalObservation(Enum):
+    SCORE_FROM_BEST = 0
+    SCORE_FROM_BEST_NORM = 1
+    SCORE_FROM_BEST_SCALE = 12
+
+    NUM_GREEDY_ACTIONS = 2
+    NUM_GREEDY_ACTIONS_NORM = 3
+    NUM_GREEDY_ACTIONS_CLIP = 4
+
+    STEPS_SINCE_BEST = 5
+    STEPS_SINCE_BEST_NORM = 6
+    STEPS_SINCE_BEST_CLIP = 7
+
+    STEPS = 8
+    STEPS_NORM = 9
+
+    PEEK_MAX = 10
+    PEEK_MAX_NORM = 11
+    PEEK_MAX_SCALE = 14
+
+    PEEK_MEAN = 15
+    PEEK_MEAN_NORM = 16
