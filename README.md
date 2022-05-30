@@ -1,11 +1,11 @@
 # ecord
 
-[![Generic badge](https://img.shields.io/badge/arXiv-XXXX.XXXXX-<COLOR>.svg)](tbc)
+[![Generic badge](https://img.shields.io/badge/arXiv-2205.14105-<COLOR>.svg)](https://arxiv.org/abs/2205.14105)
 [![MIT License](https://img.shields.io/apm/l/atomic-design-ui.svg?)](./LICENSE)
 
 ---
 
-This repository contains the codebase developed for the paper [Learning to Solve Combinatorial Graph Partitioning Problems via Efficient Exploration](tbc).
+This repository contains the codebase developed for the paper [Learning to Solve Combinatorial Graph Partitioning Problems via Efficient Exploration](https://arxiv.org/abs/2205.14105).
 
 ---
 
@@ -82,7 +82,7 @@ If you find this project or the associated paper useful, it can be cited as belo
 
     @article{barrett2022ecord,
       title={Learning to Solve Combinatorial Graph Partitioning Problems via Efficient Exploration},
-      author={Barrett, Thomas D and ...},
-      journal={arXiv preprint arXiv:XXXX.XXXXX},
+      author={Barrett, Thomas D and Parsonson, Christopher WF and Laterre, Alexandre},
+      journal={arXiv preprint arXiv:2205.14105},
       year={2022}
     }
