@@ -39,10 +39,11 @@ RUN pip install -r /tmp/requirements.txt -f https://data.pyg.org/whl/torch-1.7.1
 To build the Docker image, start a container, and enter it, run the following from the root directory of the repository.  Finally we compile the necessary Cython code (this is only required when first starting the container). 
 ```commandline
 >>> docker build . -t ecord -f Dockerfile
->>> docker run -itd --rm --name ecord_container -v /local/path/to/ecord/:/home/app/ecord ecord
+>>> docker run -itd --gpus all --rm --name ecord_container -v /local/path/to/ecord/:/home/app/ecord ecord
 >>> docker exec -it ecord_container bash
 >>> python setup_cy.py build_ext --inplace --force
 ```
+*Note that ```--gpus all``` should be removed from the ```docker run ...``` command if a GPU is not available.*
 
 #### Training
 
